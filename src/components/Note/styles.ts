@@ -44,8 +44,8 @@ export const Body = styled.div`
         resize:none;
 
         font-size:18px;
-        font-weight:100;
-        line-height:18px;
+        font-weight:300;
+        line-height:20px;
     }
 
 `;

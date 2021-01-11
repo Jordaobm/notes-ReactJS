@@ -15,7 +15,7 @@ export const NotionFlexDiv = styled.div`
 
 export const NotionText = styled.div`
     h1 {
-        font-size:40px;
+        font-size:80px;
         font-weight:700;
         line-height:40px;
 
@@ -42,7 +42,8 @@ export const NotionImage = styled.div`
 `;
 
 export const ButtonNavigateBottom = styled.div`
-    margin:10px 0;
+    width:200px;
+    margin:18px 0;
     cursor: pointer;
     background-color:var(--bg-color-1);
     display:flex;
