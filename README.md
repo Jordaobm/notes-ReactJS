@@ -2,7 +2,7 @@
 
 ![alt](https://github.com/Jordaobm/notes-ReactJS/blob/main/src/assets/1.png)
 
-Notes é um projetinho com ReactJS para treinar meus conhecimentos a tecnologia. O Objetivo do app é ser simples e fácil de desenvolver, mas que me faça usar dos meus conhecimentos em React para torná-lo realidade.
+Notes é um projetinho com ReactJS para treinar meus conhecimentos com a tecnologia. O Objetivo do app é ser simples e fácil de desenvolver, mas que me faça usar dos meus conhecimentos em React para torná-lo realidade.
 
 #### Ferramentas utilizadas no projeto
 
