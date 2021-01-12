@@ -3,9 +3,7 @@ import notion from '../../assets/notion.jpg';
 import { FiArrowDownCircle, FiDelete } from 'react-icons/fi';
 import { MdAdd } from 'react-icons/md';
 import { FiEdit2 } from 'react-icons/fi';
-
-
-import { BodyNote, ButtonAddNote, ButtonNavigateBottom, CardNote, Container, Content, ContentContainer, DeleteButton, EdditButton, FooterNote, HeaderNote, ListNotes, NewNote, NotionFlexDiv, NotionImage, NotionText } from './styles';
+import { BodyNote, ButtonAddNote, ButtonNavigateBottom, CardNote, Container, Content, ContentContainer, Date, DeleteButton, EdditButton, FooterNote, HeaderNote, ListNotes, NewNote, NotionFlexDiv, NotionImage, NotionText } from './styles';
 import Note from '../../components/Note';
 import { useNote } from '../../hooks/notes';
 
@@ -23,7 +21,7 @@ const Home: React.FC = () => {
             body,
         })
 
-    }, [showNote])
+    }, [setEdditNoteState, setShowNote])
 
     return (
 
@@ -55,7 +53,7 @@ const Home: React.FC = () => {
                     </NewNote>
                     <ListNotes>
                         {notes.map((note, index) => (
-                            <CardNote>
+                            <CardNote key={index}>
                                 <HeaderNote>
                                     {note.title}
                                 </HeaderNote>
@@ -63,6 +61,9 @@ const Home: React.FC = () => {
                                     {note.body}
                                 </BodyNote>
                                 <FooterNote>
+                                    <Date>
+                                        <p>{note.data}</p>
+                                    </Date>
                                     <EdditButton onClick={() => handleEdditShow(index, note.title, note.body)}>
                                         <FiEdit2 size={20} />
                                         <p>Editar</p>

@@ -36,7 +36,7 @@ Criar e armazenar notas!
 
 
 [] O usuário pode criar e editar notas no formato MarkDow. Em salvar ele converterá Markdown em HTML!
-[] O usuário pode ver a data em que criou a nota!
+[X] O usuário pode ver a data em que criou a nota!
 
 ![alt](https://github.com/Jordaobm/notes-ReactJS/blob/main/src/assets/2.png)
 ![alt](https://github.com/Jordaobm/notes-ReactJS/blob/main/src/assets/3.PNG)

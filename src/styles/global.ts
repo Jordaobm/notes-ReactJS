@@ -20,12 +20,12 @@ export default createGlobalStyle`
         --bg-color-3:#9021D9;
         --bg-color-4:#2C21D9;
         --bg-color-white:white;
-        --bg-color-green:green;
-        --bg-color-red:red;
-        --bg-color-yellow:yellow;
+        --bg-color-green:#4CA842;
+        --bg-color-red:#F22118;
+        --bg-color-yellow:#CFCF00;
 
-        --text-color-white:white;
+        --text-color-white:#E6E6E6;
         --text-color-gray:#ccc;
-        --text-color-black:black;
+        --text-color-black:#363636;
     }
 `;

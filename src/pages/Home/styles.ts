@@ -160,7 +160,7 @@ export const FooterNote = styled.div`
 `;
 
 export const EdditButton = styled.div`
-    width:150px;
+    width:120px;
     height:50px;
 
     cursor: pointer;
@@ -192,7 +192,7 @@ export const EdditButton = styled.div`
 `;
 
 export const DeleteButton = styled.div`
-    width:150px;
+    width:140px;
     height:50px;
 
     cursor: pointer;
@@ -221,5 +221,13 @@ export const DeleteButton = styled.div`
 
     }
 
+`;
+
+export const Date = styled.div`
+    p {
+        width:75px;
+        font-size:12px;
+        color:var(--text-color-gray);
+    }
 `;
 

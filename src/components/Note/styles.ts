@@ -1,6 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Content = styled.div`
+interface ContentProps {
+    show: boolean
+}
+
+export const Content = styled.div<ContentProps>`
+
+    
+
     margin:20px 0;
     width:500px;
     min-height:300px;

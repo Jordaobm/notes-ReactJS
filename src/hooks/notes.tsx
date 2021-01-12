@@ -1,8 +1,10 @@
+import { format } from 'date-fns';
 import React, { createContext, useCallback, useContext, useState } from 'react';
 
 interface Note {
     title: string;
     body: string;
+    data?:string;
 }
 
 interface NoteEdit {
@@ -40,21 +42,29 @@ const NoteProvider: React.FC = ({ children }) => {
     });
 
     const addNote = useCallback((title: string, body: string) => {
+        const date = new Date();
+        const parsedDate = format(date, "dd/MM/yyyy 'às' H':'m':'s'");
+
         const note = {
             title,
-            body
+            body,
+            data:parsedDate
         }
         setShowNote(false)
         setNotes([...notes, note])
     }, [notes])
 
     const edditNote = useCallback((id: number, title: string, body: string) => {
+        const date = new Date();
+        const parsedDate = format(date, "dd/MM/yyyy 'às' H':'m':'s'");
+
         setShowNote(false)
         setEdditNoteState(null)
         notes[id] = {
 
             title,
-            body
+            body,
+            data:parsedDate
         }
     }, [notes])
 
